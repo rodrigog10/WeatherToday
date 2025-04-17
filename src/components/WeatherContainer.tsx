@@ -100,13 +100,13 @@ export default function WeatherContainer() {
   };
 
   return (
-    <div className="flex flex-col items-center mt-10 gap-4">
+    <div className="flex flex-col items-center mt-10 gap-4 px-4">
       {/* Linha com input + botão de buscar */}
-      <div className="flex w-2/3 gap-2">
+      <div className="flex flex-col md:w-2/3 gap-4">
         <input
           type="text"
           placeholder="Digite a cidade"
-          className="text-white flex-1 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
+          className="text-white w-full p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
           value={city}
           onChange={(e) => setCity(e.target.value)}
           onKeyDown={(e) => {
@@ -115,7 +115,7 @@ export default function WeatherContainer() {
         />
         <button
           onClick={fetchWeatherByCity}
-          className="cursor-pointer font-bold flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition"
+          className="w-fit self-center cursor-pointer font-bold flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition"
         >
           <SearchIcon size={20} />
           Buscar cidade
@@ -127,7 +127,7 @@ export default function WeatherContainer() {
       {/* Botão localização embaixo */}
       <button
         onClick={fetchWeatherByLocation}
-        className="cursor-pointer font-bold flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition"
+        className="w-fit self-center cursor-pointer font-bold flex items-center justify-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition"
       >
         <Navigation size={20} />
         Usar localização atual

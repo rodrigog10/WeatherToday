@@ -43,10 +43,11 @@ export default function InputSearch() {
         <input
           type="text"
           placeholder="Digite o nome da cidade"
-          className="text-white w-1/2 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
+          className="text-white w-full sm:w-1/2 p-2 border border-gray-300 rounded-md shadow-sm focus:outline-none focus:ring focus:ring-blue-500"
           value={city}
           onChange={(e) => setCity(e.target.value)}
-        />
+        ></input>
+
         <button
           onClick={fetchWeather}
           onKeyDown={(e) => {
@@ -58,7 +59,6 @@ export default function InputSearch() {
         >
           <SearchIcon />
         </button>
-   
       </div>
       {weather && weather.main && <CityInfo weather={weather} />}
     </FadeToInput>
