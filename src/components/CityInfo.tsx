@@ -25,7 +25,7 @@ export default function CityInfo({ weather }: CityInfoProps) {
     <FadeInSection>
       <div>
         <h1 className="mt-6 mb-7 text-4xl font-bold text-white flex justify-center items-center text-center gap-2">
-          Tempo em {weather.name} <MapPin />
+          Tempo em {weather.name} <MapPin size={35} />
         </h1>
       </div>
 

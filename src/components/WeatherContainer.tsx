@@ -115,22 +115,21 @@ export default function WeatherContainer() {
         />
         <button
           onClick={fetchWeatherByCity}
-          className="cursor-pointer flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition"
+          className="cursor-pointer font-bold flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition"
         >
-          <SearchIcon size={18} />
+          <SearchIcon size={20} />
           Buscar cidade
         </button>
       </div>
 
-      {/* OU */}
-      <span className="text-white">ou</span>
+      <span className="text-white text-3xl font-bold">ou</span>
 
       {/* Botão localização embaixo */}
       <button
         onClick={fetchWeatherByLocation}
-        className="cursor-pointer  flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition"
+        className="cursor-pointer font-bold flex items-center gap-2 px-4 py-2 bg-blue-600 text-white rounded-md shadow hover:bg-blue-700 transition"
       >
-        <Navigation size={18} />
+        <Navigation size={20} />
         Usar localização atual
       </button>
 

@@ -7,7 +7,7 @@ export default function Home() {
       <FadeToInput>
         <div>
           <h1 className="mt-8 flex justify-center text-center text-5xl text-white font-bold">
-            Como está o Clima hoje?
+            Como está o clima hoje?
           </h1>
           <WeatherContainer />
         </div>
